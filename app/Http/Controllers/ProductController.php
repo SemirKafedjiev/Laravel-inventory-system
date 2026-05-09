@@ -103,7 +103,7 @@ class ProductController extends Controller
         return redirect('/products')->with('success', 'Обновен продукт');
     }
 
-    public function destroy(Product $product,cd ProductService $service)
+    public function destroy(Product $product, ProductService $service)
     {
         $service->delete($product);
 
